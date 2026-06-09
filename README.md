@@ -37,6 +37,9 @@ Claude may build it with a different tool. Typing the command pins the request t
    - `/psd-jsx-builder` 1080×1080 Instagram post, "GRAND OPENING" in big letters, dark background
    - `/psd-jsx-builder` 16:9 title slide, title "Quarterly Review", subtitle "Q2 2026"
    - `/psd-jsx-builder` business card 90×54 mm, name "Alex Kim", role "Designer", for print
+
+   Or just type `/psd-jsx-builder` on its own — Claude walks you through the setup first (what it's
+   for, where it'll be used), picks the right canvas, and builds, in order.
 3. Claude writes the script, drives Photoshop, and shows you a **preview**.
 4. **Want changes? Just say so** — *"make the title bigger,"* *"use a blue background,"* *"move
    the logo to the top-right."* Claude rebuilds and shows you again.
