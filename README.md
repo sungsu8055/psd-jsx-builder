@@ -25,7 +25,15 @@ choose the `psd-jsx-builder.zip` you just downloaded.
 
 **4. Toggle it on** in the skills list. Done — you won't need to do this again.
 
-**What you need:** a **Mac**, **Adobe Photoshop** installed, and the **Claude desktop app** signed in.
+**What you need**
+
+- A **Mac** with **Adobe Photoshop** installed (your own copy).
+- The **Claude desktop app** signed in, with **Code execution and file creation** on
+  (Settings → Capabilities) — this runs the build/verify scripts.
+- The first time it builds, macOS asks to let Claude control Photoshop — click **OK / Allow**.
+
+No extra connectors or plugins are required — Claude installs any Python libraries it needs
+(`psd-tools`, `Pillow`) on its own.
 
 ## Make your first image
 
@@ -44,16 +52,6 @@ Claude may build it with a different tool. Typing the command pins the request t
 4. **Want changes? Just say so** — *"make the title bigger,"* *"use a blue background,"* *"move
    the logo to the top-right."* Claude rebuilds and shows you again.
 5. When it looks right, the layered **`.psd`** (plus a JPG/PNG/PDF) is waiting in your folder.
-
-### Good to know
-
-- **You can be vague.** Not sure about size or settings? Just describe the goal — Claude asks what
-  it's for (a slide? Instagram? something to print?) and picks the right size and quality.
-- **For print,** say it's for print and the size (e.g. *"A4 poster for printing"*); Claude sets it
-  up properly (CMYK, 300 DPI, bleed).
-- **Photoshop will open and move on its own** while it builds — that's normal, let it work.
-- **First time only:** your Mac may pop up a box asking to let Claude control Photoshop — click
-  **OK / Allow**.
 
 ## What you can make
 
