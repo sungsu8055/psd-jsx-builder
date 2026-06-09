@@ -7,7 +7,7 @@ around in Photoshop.
 > **Status: early prototype (R&D).** Right now it does one thing: build PSDs in Photoshop
 > through Claude's **Cowork** mode via chat. It'll grow from here.
 
-## Install — one time
+## Install
 
 **1. Download the skill:**
 [`psd-jsx-builder.zip`](https://github.com/sungsu8055/psd-jsx-builder/raw/main/psd-jsx-builder.zip)
