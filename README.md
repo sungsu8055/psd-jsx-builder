@@ -4,6 +4,15 @@ Make layered Photoshop **`.psd`** files by **chatting with Claude** — you desc
 want, Claude writes a small Photoshop script, runs it, and shows you a preview. No clicking
 around in Photoshop.
 
+## Example
+
+![Japanese whisky — a 1080×1080 Instagram template built with this skill](docs/japanese-whisky.jpg)
+
+*A reusable Instagram template (1080×1080): a dark, editorial layout with a reserved center zone so
+you can drop a product bottle on top. The warm spotlight, film grain, machined gold corners, and the
+editable name plate are all generated from a single script —
+[`examples/japanese_whisky.jsx`](examples/japanese_whisky.jsx) — with no manual Photoshop clicking.*
+
 > **Status: early prototype (R&D).** Right now it does one thing: build PSDs in Photoshop
 > through Claude's **Cowork** mode via chat. It'll grow from here.
 
