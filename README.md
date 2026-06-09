@@ -23,11 +23,22 @@ or anything else.)
 
 ### 2. Install the skill — one time
 
-1. Get the skill file **`psd-jsx-builder.skill`** (from this repo, or someone shares it with you
-   inside a Claude chat).
-2. In the Claude app, add it to Cowork: if the `.skill` file appears in a chat, click the
-   **Save skill** button on it; otherwise add it from Cowork's skills/capabilities settings.
-3. Done — Claude now knows how to build Photoshop files. You won't need to do this again.
+The whole thing is **one file, `psd-jsx-builder.skill`**. It's a bundle that already contains
+everything — the instructions, every reference doc, and the scripts — so that single file is all
+you need. (You do *not* download the `.md` files separately.)
+
+1. **Turn on code execution** (required for skills): open **Settings → Capabilities** and switch
+   on **"Code execution and file creation."**
+2. **Install the skill — pick whichever is easier:**
+   - **Easiest, one click:** when `psd-jsx-builder.skill` shows up in a Claude chat, click the
+     **Save skill** button on it.
+   - **Or upload it yourself:** go to **Customize → Skills**, click **＋ → Create skill → Upload a
+     skill**, and choose the `psd-jsx-builder.skill` file. *(If the file picker only accepts
+     `.zip`, rename the file from `.skill` to `.zip` — it's the same archive.)*
+3. Done — it appears in **Customize → Skills** with a toggle, and you never have to do this again.
+
+To use it, just describe what you want in a chat (Claude picks the skill automatically), or type
+`/` and choose it from the list.
 
 ### 3. Make your first image
 
