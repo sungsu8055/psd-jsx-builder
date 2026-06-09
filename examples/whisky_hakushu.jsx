@@ -23,6 +23,7 @@ var GREEND = hexc("5E7B50");  // dim moss green
 var CREAM  = hexc("EAF0E4");  // cool white
 var MUTED  = hexc("9DB29A");  // muted sage meta
 var MIST   = hexc("4A6B46");  // cool glow / haze
+var OLIVE  = hexc("8A6622");  // warm olive-amber (the bottle glass catching light)
 function hexc(h) { var c = new SolidColor(); c.rgb.hexValue = h; return c; }
 
 var DOC_NAME = "JP-WHISKY-HAKUSHU";
@@ -116,6 +117,8 @@ try {
   // misty haze near the top + cool light behind the product
   softGlow("01 · Mist", CX, s(150), s(940), s(420), MIST, s(230), 30);
   softGlow("01b · Glow", CX, s(600), s(470), s(560), MIST, s(200), 34);
+  // warm olive-amber glass glow behind the product (bottle catching light)
+  softGlow("01c · Olive-amber glass", CX, s(640), s(420), s(560), OLIVE, s(200), 35);
   // faint forest lines in the margins
   forestLines("02 · Forest", GREEN);
   // ground shadow + floor line
