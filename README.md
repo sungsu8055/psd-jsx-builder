@@ -13,6 +13,19 @@ you can drop a product bottle on top. The warm spotlight, film grain, machined g
 editable name plate are all generated from a single script —
 [`examples/japanese_whisky.jsx`](examples/japanese_whisky.jsx) — with no manual Photoshop clicking.*
 
+## Gallery — Japanese whisky series
+
+A set of reusable **1080×1080** templates — one mood per brand, color and tone tuned to each
+label — plus matching **1080×1920** story versions. Each is generated from a script
+([`whisky_yamazaki.jsx`](examples/whisky_yamazaki.jsx),
+[`whisky_hibiki.jsx`](examples/whisky_hibiki.jsx),
+[`whisky_hakushu.jsx`](examples/whisky_hakushu.jsx)) and leaves an empty center zone to drop a
+product bottle on.
+
+![Japanese whisky series — square templates](docs/series-board.jpg)
+
+![Japanese whisky series — story (1080×1920) templates](docs/story-board.jpg)
+
 > **Status: early prototype (R&D).** Right now it does one thing: build PSDs in Photoshop
 > through Claude's **Cowork** mode via chat. It'll grow from here.
 
