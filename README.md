@@ -23,22 +23,25 @@ or anything else.)
 
 ### 2. Install the skill — one time
 
-The whole thing is **one file, `psd-jsx-builder.skill`**. It's a bundle that already contains
-everything — the instructions, every reference doc, and the scripts — so that single file is all
-you need. (You do *not* download the `.md` files separately.)
+The whole thing is **one file, `psd-jsx-builder.skill`** — a bundle that already contains
+everything (the instructions, every reference doc, and the scripts). That single file is all you
+need; you don't download the `.md` files separately.
 
-1. **Turn on code execution** (required for skills): open **Settings → Capabilities** and switch
-   on **"Code execution and file creation."**
-2. **Install the skill — pick whichever is easier:**
-   - **Easiest, one click:** when `psd-jsx-builder.skill` shows up in a Claude chat, click the
-     **Save skill** button on it.
-   - **Or upload it yourself:** go to **Customize → Skills**, click **＋ → Create skill → Upload a
-     skill**, and choose the `psd-jsx-builder.skill` file. *(If the file picker only accepts
-     `.zip`, rename the file from `.skill` to `.zip` — it's the same archive.)*
-3. Done — it appears in **Customize → Skills** with a toggle, and you never have to do this again.
+1. **Download it** from the [**Releases**](https://github.com/sungsu8055/psd-jsx-builder/releases)
+   page — grab `psd-jsx-builder.skill` (or `psd-jsx-builder.zip`, the same archive).
+   ⚠️ *Don't use the green "Code → Download ZIP" button — that's the whole repository and it won't
+   install as a skill.*
+2. **Turn on code execution** (required for skills): **Settings → Capabilities** → switch on
+   **"Code execution and file creation."**
+3. **Upload it:** go to **Customize → Skills**, click **＋ → Create skill → Upload a skill**, and
+   choose the file you downloaded. *(If the picker only accepts `.zip`, use the `.zip` version.)*
+4. Done — it appears in **Customize → Skills** with a toggle, and you never have to do this again.
 
-To use it, just describe what you want in a chat (Claude picks the skill automatically), or type
-`/` and choose it from the list.
+*(If someone shares the `.skill` with you inside a Claude chat instead, you can skip the download
+and just click the **Save skill** button on it.)*
+
+To use it, describe what you want in a chat (Claude picks the skill automatically), or type `/`
+and choose it from the list.
 
 ### 3. Make your first image
 
