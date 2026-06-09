@@ -7,26 +7,25 @@ around in Photoshop.
 > **Status: early prototype (R&D).** Right now it does one thing: build PSDs in Photoshop
 > through Claude's **Cowork** mode via chat. It'll grow from here.
 
-## Install — one file, one time
+## Install — one time
 
-**Download the skill: [`psd-jsx-builder.skill`](https://github.com/sungsu8055/psd-jsx-builder/raw/main/psd-jsx-builder.skill)**
+**1. Download the skill:**
+[`psd-jsx-builder.skill`](https://github.com/sungsu8055/psd-jsx-builder/raw/main/psd-jsx-builder.skill)
+— that single file *is* the whole skill (the instructions, every reference doc, and the scripts,
+bundled together).
 
-That single file *is* the whole skill — the instructions, every reference doc, and the scripts,
-bundled together. Then:
+> ⚠️ Don't use the green **Code → Download ZIP** button at the top of this repo — that grabs the
+> whole repository, which won't install as a skill. Use the download link above.
 
-1. Open the **Claude desktop app** (with **Cowork**).
-2. **Drag `psd-jsx-builder.skill` into a chat**, then click **Save skill** on the card that appears.
-3. Done — Claude now knows how to build Photoshop files. You won't need to do this again.
+**2. Turn on code execution:** in Claude, go to **Settings → Capabilities** and switch on
+**Code execution and file creation** (skills need this to run).
 
-> Prefer menus? **Customize → Skills → ＋ → Upload a skill** also works. If the picker only
-> accepts `.zip`, just change the file's extension from `.skill` to `.zip` — it's the same archive.
->
-> ⚠️ Don't use the green **Code → Download ZIP** button at the top of this repo — that downloads
-> the whole repository, which won't install as a skill. Use the download link above.
+**3. Upload it:** go to **Customize → Skills**, click **＋ → Create skill → Upload a skill**, and
+choose the `psd-jsx-builder.skill` you just downloaded.
 
-**What you need:** a **Mac**, **Adobe Photoshop** installed, and the **Claude desktop app** signed
-in. Skills run code, so make sure **Code execution and file creation** is turned on under
-**Settings → Capabilities**.
+**4. Toggle it on** in the skills list. Done — you won't need to do this again.
+
+**What you need:** a **Mac**, **Adobe Photoshop** installed, and the **Claude desktop app** signed in.
 
 ## Make your first image
 
