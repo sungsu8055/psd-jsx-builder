@@ -30,9 +30,11 @@ choose the `psd-jsx-builder.zip` you just downloaded.
 - A **Mac** with **Adobe Photoshop** installed (your own copy).
 - The **Claude desktop app** signed in, with **Code execution and file creation** on
   (Settings → Capabilities) — this runs the build/verify scripts.
+- The **macOS connector** enabled — this is what lets Claude run commands and drive Photoshop
+  on your Mac, which the build step depends on.
 - The first time it builds, macOS asks to let Claude control Photoshop — click **OK / Allow**.
 
-No extra connectors or plugins are required — Claude installs any Python libraries it needs
+No other external connectors are needed, and Claude installs the Python libraries it uses
 (`psd-tools`, `Pillow`) on its own.
 
 ## Make your first image
