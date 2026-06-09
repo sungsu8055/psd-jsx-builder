@@ -1,4 +1,4 @@
-# psd-jsx-builder
+# Claude Photoshop Skill
 
 Make layered Photoshop **`.psd`** files by **chatting with Claude** — you describe what you
 want, Claude writes a small Photoshop script, runs it, and shows you a preview. No clicking
@@ -10,7 +10,7 @@ around in Photoshop.
 ## Install
 
 **1. Download the skill:**
-[`psd-jsx-builder.zip`](https://github.com/sungsu8055/psd-jsx-builder/raw/main/psd-jsx-builder.zip)
+[`psd-jsx-builder.zip`](https://github.com/sungsu8055/claude-photoshop-skill/raw/main/psd-jsx-builder.zip)
 — that single file *is* the whole skill (the instructions, every reference doc, and the scripts,
 bundled together).
 
