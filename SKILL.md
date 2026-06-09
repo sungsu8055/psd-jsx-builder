@@ -29,7 +29,9 @@ If the user isn't a design expert, **don't ask for pixels or DPI.** Ask in plain
 they're making and where it'll end up, then derive the settings and restate them in plain terms.
 `references/project_setup.md` has the full intake script, an intent→settings preset table (slides,
 social, print, …), beginner explanations of DPI / CMYK / bleed, and exactly how to fill the
-template's `DOCUMENT PRESET` block. Read it and run the intake before building.
+template's `DOCUMENT PRESET` block. Read it and run the intake before building. Ready-to-paste
+preset blocks for common use cases are in `references/presets.md`, and `references/workflow.md` is
+the whole loop laid out step by step (setup → write → build → verify → export).
 
 ## The build loop
 
@@ -78,6 +80,8 @@ The build always leaves a layered `.psd` — the editable source. Export the act
 | Task | Tool |
 |------|------|
 | Set up the project (do FIRST) | `references/project_setup.md` |
+| Ready presets by use case | `references/presets.md` |
+| Step-by-step workflow | `references/workflow.md` |
 | Blank template + `DOCUMENT PRESET` | `references/template.jsx` |
 | Build PSD from jsx | `scripts/build_psd.sh file.jsx` |
 | Render + bounds check | `scripts/verify_psd.py out.psd` |

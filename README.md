@@ -38,7 +38,7 @@ pip install psd-tools pillow
 python scripts/verify_psd.py ~/Desktop/hello_slide.psd   # render + layer bounds
 ```
 
-- `references/` — the template, a beginner setup guide, and the ExtendScript helper/footgun notes
+- `references/` — the template, a beginner setup guide, ready presets by use case, a step-by-step workflow, and the ExtendScript helper/footgun notes
 - `scripts/` — build, verify, and export tools
 - `examples/` — runnable `.jsx` samples
 
