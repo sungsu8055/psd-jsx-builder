@@ -10,7 +10,7 @@ around in Photoshop.
 ## Install — one time
 
 **1. Download the skill:**
-[`psd-jsx-builder.skill`](https://github.com/sungsu8055/psd-jsx-builder/raw/main/psd-jsx-builder.skill)
+[`psd-jsx-builder.zip`](https://github.com/sungsu8055/psd-jsx-builder/raw/main/psd-jsx-builder.zip)
 — that single file *is* the whole skill (the instructions, every reference doc, and the scripts,
 bundled together).
 
@@ -21,7 +21,7 @@ bundled together).
 **Code execution and file creation** (skills need this to run).
 
 **3. Upload it:** go to **Customize → Skills**, click **＋ → Create skill → Upload a skill**, and
-choose the `psd-jsx-builder.skill` you just downloaded.
+choose the `psd-jsx-builder.zip` you just downloaded.
 
 **4. Toggle it on** in the skills list. Done — you won't need to do this again.
 
@@ -81,9 +81,10 @@ edits) is supported too.
 
 ---
 
-<sub><b>Maintainers:</b> the repo <i>is</i> the skill. Edit <code>SKILL.md</code> /
-<code>references/</code> / <code>scripts/</code> / <code>examples/</code>, then run
-<code>./pack_skill.sh</code> to rebuild <code>psd-jsx-builder.skill</code> and commit the result.</sub>
+<sub><b>Maintainers:</b> the installable is <code>psd-jsx-builder.zip</code> — a zip whose
+top-level <code>psd-jsx-builder/</code> folder holds <code>SKILL.md</code> + <code>references/</code>
++ <code>scripts/</code> + <code>examples/</code> (no README or <code>.git</code> inside). After
+editing those, rebuild that zip and commit it.</sub>
 
 ## License
 
