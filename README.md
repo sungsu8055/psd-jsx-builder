@@ -7,10 +7,73 @@ clicking.
 > **Status: early prototype (R&D).** This is not a finished product. Right now it does one thing:
 > build PSDs in Photoshop through Claude Cowork via chat. It'll grow from here.
 
+## Getting started (no experience needed)
+
+You don't need to code, use a terminal, or install anything technical. You just chat with Claude.
+
+### 1. What you need first
+
+- A **Mac**.
+- **Adobe Photoshop** installed on that Mac (you need your own copy).
+- The **Claude desktop app** with **Cowork** — download it from [claude.ai](https://claude.ai)
+  and sign in.
+
+That's all. (Claude takes care of the preview/export tools on its side — you don't install Python
+or anything else.)
+
+### 2. Install the skill — one time
+
+1. Get the skill file **`psd-jsx-builder.skill`** (from this repo, or someone shares it with you
+   inside a Claude chat).
+2. In the Claude app, add it to Cowork: if the `.skill` file appears in a chat, click the
+   **Save skill** button on it; otherwise add it from Cowork's skills/capabilities settings.
+3. Done — Claude now knows how to build Photoshop files. You won't need to do this again.
+
+### 3. Make your first image
+
+1. Open a **new Cowork chat**.
+2. **Pick a folder** for your files — when Claude asks (or from the chat), choose a folder on your
+   Mac where the finished files should be saved.
+3. **Type what you want, in plain words.** For example:
+   - *"Make a 1080×1080 Instagram post that says GRAND OPENING in big letters, dark background."*
+   - *"Build a 16:9 title slide — title 'Quarterly Review', subtitle 'Q2 2026'."*
+   - *"I need a business card, 90×54 mm, name 'Alex Kim', role 'Designer', for printing."*
+4. Claude writes the script, opens Photoshop, builds the file, and shows you a **preview image**.
+5. **Want changes? Just say so:** *"make the title bigger,"* *"use a blue background,"* *"move the
+   logo to the top-right."* Claude rebuilds and shows you again.
+6. When it looks right, the layered **`.psd`** (plus a JPG/PNG/PDF) is waiting in your folder.
+
+### Good to know
+
+- **You can be vague.** Not sure about size or settings? Just describe the goal — Claude will ask
+  what it's for (a slide? Instagram? something to print?) and pick the right size and quality.
+- **For printing,** say it's for print and the size (e.g. *"A4 poster for printing"*). Claude sets
+  it up properly (CMYK, 300 DPI, bleed).
+- **Photoshop will open and move on its own** while it builds — that's normal, let it work.
+- **First time only:** your Mac may pop up a box asking to let Claude control Photoshop — click
+  **OK / Allow**.
+
+<details>
+<summary><b>For developers — run the scripts without Claude (optional)</b></summary>
+
+The scripts are plain bash + Python. You'll need Python 3.
+
+```bash
+git clone https://github.com/sungsu8055/psd-jsx-builder.git
+cd psd-jsx-builder
+pip install psd-tools pillow
+
+./scripts/build_psd.sh examples/hello_slide.jsx          # builds a sample slide to your Desktop
+python scripts/verify_psd.py ~/Desktop/hello_slide.psd   # render a PNG + dump layer bounds
+```
+
+Copy `references/template.jsx`, paste a block from `references/presets.md`, add your content, and
+build. The full step-by-step is in `references/workflow.md`.
+</details>
+
 ## How it works
 
-You ask for something in chat (e.g. *"a 16:9 title slide that says Hello"*) and these steps run —
-in Cowork, Claude does them for you; running the scripts yourself, this is the order.
+When you ask for something in chat, these steps run — in Cowork, Claude does them for you.
 
 | # | Step | Tool |
 |---|------|------|
@@ -26,8 +89,8 @@ separately — see `references/repage_pattern.md`.
 
 ## Use-case presets
 
-Ready-made document settings so you don't have to work out pixels, DPI, or bleed. Paste one block
-(from `references/presets.md`) over the template's `DOCUMENT PRESET`, add your content, build.
+Ready-made document settings so you don't have to work out pixels, DPI, or bleed. (In chat you
+don't touch these — Claude picks the right one. Copy-paste blocks live in `references/presets.md`.)
 
 | Use case | Size | Color | Export |
 |----------|------|-------|--------|
@@ -55,26 +118,6 @@ Screen output (slides, social) is the solid path. **Print (CMYK / PDF·X) is exp
 | `references/repage_pattern.md` | Edit text / swap images without losing manual edits |
 | `scripts/` | Build, verify, and export tools (bash + Python) |
 | `examples/` | Runnable `.jsx` samples |
-
-## Requirements
-
-- macOS + Adobe Photoshop (tested on 2026)
-- Python 3 with `psd-tools` and `Pillow` — `pip install psd-tools pillow`
-- For the chat workflow: Claude Cowork
-
-## Usage
-
-**In Claude Cowork (the main way)** — install this as a skill, then just ask, e.g.
-*"build a 1080×1080 Instagram post that says 20% OFF this weekend."* Claude handles the script,
-the build, and the preview, and you refine it in conversation.
-
-**Standalone (the scripts underneath)** — plain bash/Python, no Claude needed:
-
-```bash
-pip install psd-tools pillow
-./scripts/build_psd.sh examples/hello_slide.jsx          # builds a sample slide to your Desktop
-python scripts/verify_psd.py ~/Desktop/hello_slide.psd   # render + layer bounds
-```
 
 ## License
 
