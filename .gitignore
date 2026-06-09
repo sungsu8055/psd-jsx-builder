@@ -1,0 +1,14 @@
+# build artifacts / renders
+*.psd
+*_render.png
+*.pdf
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# os
+.DS_Store
+Thumbs.db
