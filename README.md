@@ -29,11 +29,16 @@ choose the `psd-jsx-builder.skill` you just downloaded.
 
 ## Make your first image
 
+**Always start by naming the skill.** If you just describe an image, Claude may make a flat picture
+with a different tool instead of a layered Photoshop file. Begin your message with
+**"Use the psd-jsx-builder skill to…"** (or type `/` and pick **psd-jsx-builder** if it appears) so
+it stays on the PSD pipeline.
+
 1. Open a **new chat** and **pick a folder** where your files should be saved.
-2. **Say what you want, in plain words.** For example:
-   - *"Make a 1080×1080 Instagram post that says GRAND OPENING in big letters, dark background."*
-   - *"Build a 16:9 title slide — title 'Quarterly Review', subtitle 'Q2 2026'."*
-   - *"I need a business card, 90×54 mm, name 'Alex Kim', role 'Designer', for print."*
+2. **Invoke the skill, then say what you want.** For example:
+   - *"Use the psd-jsx-builder skill to make a 1080×1080 Instagram post that says GRAND OPENING in big letters, dark background."*
+   - *"Use the psd-jsx-builder skill to build a 16:9 title slide — title 'Quarterly Review', subtitle 'Q2 2026'."*
+   - *"Use the psd-jsx-builder skill to make a business card, 90×54 mm, name 'Alex Kim', role 'Designer', for print."*
 3. Claude writes the script, drives Photoshop, and shows you a **preview**.
 4. **Want changes? Just say so** — *"make the title bigger,"* *"use a blue background,"* *"move
    the logo to the top-right."* Claude rebuilds and shows you again.
