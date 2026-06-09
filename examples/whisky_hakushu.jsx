@@ -16,13 +16,13 @@ var COLOR_MODE = NewDocumentMode.RGB;
 var SLIDE_W = CANVAS_W * SCALE, SLIDE_H = CANVAS_H * SCALE;
 function s(v) { return v * SCALE; }
 
-// ----- palette (pine forest — from the box: deep pine green + parchment ivory) -----
-var BG     = hexc("15291D");  // deep pine green (the box)
-var GREEN  = hexc("A7C49A");  // sage leaf accent (box / label light green)
-var GREEND = hexc("5C7A4E");  // dim moss green
-var CREAM  = hexc("EAE4D0");  // parchment ivory (label)
-var MUTED  = hexc("A1B39C");  // muted sage meta
-var MIST   = hexc("356046");  // luminous pine (blooms / haze)
+// ----- palette (fresh forest) -----
+var BG     = hexc("08130D");  // deep forest green-black
+var GREEN  = hexc("9CC089");  // fresh leaf green (accent)
+var GREEND = hexc("5E7B50");  // dim moss green
+var CREAM  = hexc("EAF0E4");  // cool white
+var MUTED  = hexc("9DB29A");  // muted sage meta
+var MIST   = hexc("4A6B46");  // cool glow / haze
 function hexc(h) { var c = new SolidColor(); c.rgb.hexValue = h; return c; }
 
 var DOC_NAME = "JP-WHISKY-HAKUSHU";
@@ -113,9 +113,9 @@ try {
 
   var CX = SLIDE_W / 2;
 
-  // luminous pine — a lit upper-center bloom (the box's lit green) + glow behind the product
-  softGlow("01 · Mist", CX, s(270), s(1000), s(520), MIST, s(240), 38);
-  softGlow("01b · Glow", CX, s(610), s(470), s(560), MIST, s(205), 32);
+  // misty haze near the top + cool light behind the product
+  softGlow("01 · Mist", CX, s(150), s(940), s(420), MIST, s(230), 30);
+  softGlow("01b · Glow", CX, s(600), s(470), s(560), MIST, s(200), 34);
   // faint forest lines in the margins
   forestLines("02 · Forest", GREEN);
   // ground shadow + floor line
